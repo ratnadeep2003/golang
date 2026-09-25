@@ -1,0 +1,17 @@
+.........................................................................................................
+Read https://go.dev/solutions/google/coredata blog later, when you are traveling or on walk
+.........................................................................................................
+
+Intro to Golang:
+    1) Designed by google
+    2) Designed for high performance with simple easy to understand syntax
+    3) It is statically (data types of each var must be known at compile time) typed compiled language 
+    4) Useful for running performat backend services
+    5) Great for networking and multiprocessing
+    6) Use cases- cloud and n/w services, cli, web dev (backend), automation and dev ops
+
+Difference between compiler and interpreter: 
+    Compiler transforms source code to byte code 
+    Interpreter transforms and executes source code line by line 
+    Js is unterpreted language, Golang is compiled language
+
