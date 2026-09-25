@@ -15,3 +15,44 @@ Difference between compiler and interpreter:
     Interpreter transforms and executes source code line by line 
     Js is unterpreted language, Golang is compiled language
 
+Dynamic vs Static typed languages: 
+    Dynamic typed language: variables are defined at runtime (JS)
+        ex: var x =1;
+            x = 'ratnadeep' -> allowed
+    Static typed language: variables are defined at compile time (C,Golang)
+        ex: int x = 1;
+            x = 'ratnadeep' -> not allowed
+.........................................................................................................
+
+go run vs go build: 
+    go build demo.go: This translates your Go code directly into pure machine code (zeros and ones) and packages it into a standalone .exe file. That .exe file contains everything it needs to run on Windows, and you can even copy that .exe to another Windows computer that doesn't even have Go installed, and it will still run!
+
+    go run demo.go: This is a shortcut for developers. Behind the scenes, Go compiles your code into a temporary executable in your system's temp folder, runs it immediately, and then automatically deletes the temporary file so it doesn't clutter your project folder.
+.........................................................................................................
+
+DataTypes in go:
+    1) uint: unsigned int, uint by default is uint32 (32 bits: range= 0 to 2^32 -1, total values=2^32) uint64 (64 bits: range=0 to 2^64 -1, total values =2^64). Depending upon te range there are uint8-uint64
+
+    2)int: signed integer, same uint, it has int8-int64
+    range is from -2^(n-1) to 2^(n-1)-1
+    total values: 2^n
+
+    3)float: for floating values
+
+    4)byte: is equal to int8
+
+    5)rune: is equal to int32
+
+    6)boolean: true or false
+
+    7)string: only use " and not '
+
+    8)nil: undefined or null
+
+Types of variables: var(can change) and const(cannot change)
+    hence the structure is: variabletype variablename datatype = value
+.........................................................................................................
+ 
+Implicit assignment operator (:=)
+    var x uint8 = 100 -> this is explicit declaration
+    x:= 100 -> implicit declaration
